@@ -1,0 +1,10 @@
+set equ to PV=nRT
+set equ to #P1##V1#/#T1#=#P2##V2#/#T2#
+set var to P=,V=,n=,R=
+set unc to P=,V=,n=,R=
+calculate T -sf (significant figures)-c (copy to clipboard)
+print T -sf -c -u (uncertainties)
+var clear
+unc clear
+unc on
+unc off
