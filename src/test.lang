@@ -1,10 +1,13 @@
-set equ to PV=nRT
-set equ to #P1##V1#/#T1#=#P2##V2#/#T2#
-set var to P=,V=,n=,R=
-set unc to P=,V=,n=,R=
-calculate T -sf (significant figures)-c (copy to clipboard)
-print T -sf -c -u (uncertainties)
-var clear
-unc clear
-unc on
-unc off
+equ gas_law PV=nRT;
+equ gas_law_1 (P1)(V1)/(T1)=(P2)(V2)/(T2);
+var gas_law P=1.00e2, V=1.0, n=0.1, R=8.314;
+unc gas_law P=0.01, V=0.1, n=0.01, R=null;
+uni gas_law P='kPa', V='L', n='mol', R='(kPa)(L)/(K)(mol)', T='K';
+
+tex gas_law -u -sf -sn;
+tex gas_law.T -u -sf -sn;
+tex gas_law.equ -u;
+
+print gas_law -u -sf;
+print gas_law.T -u -sf;
+print gas_law.equ -u;
