@@ -1,2 +1,2 @@
 # LABCALC
-Useful set of functions for science labs
+A language for calculating unknown values in equations.
