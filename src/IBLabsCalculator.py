@@ -1,13 +1,18 @@
 # IB Labs Calculator Menu
-modeoptions = ['Plain Calculator','Variables']
-print("""This is the homepage for the IB Labs Calculator.
-Enter in your criteria:""")
-for i in range(len(modeoptions)):
-    print(i,modeoptions[i])
+
 def limit(mode, minimum=0, maximum=3):
 #Limits input of mode to 0-1
-  return max(min(mode, maximum), minimum)
-  limit(input)
+    return max(min(mode, maximum), minimum)
+
+def initial_out():
+    modeoptions = ['Plain Calculator','Variables']
+    print("This is the homepage for the IB Labs Calculator.\n" +
+          "Enter in your criteria:")
+    for i in range(len(modeoptions)):
+        print(i,modeoptions[i])
+
+initial_out()
+limit(input)
 
 """if mode == 0:
     #insertmode0

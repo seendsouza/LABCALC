@@ -1,5 +1,5 @@
 import lexer
-def main():
+def read_file():
     """
     Read the LABCALC source code and store it in a variable
     """
@@ -17,5 +17,6 @@ def main():
             tokens = lex.tokenize()
             if not line:
                 break
+    return tokens
 
-main()
+read_file()

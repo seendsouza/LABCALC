@@ -1,6 +1,6 @@
 equ gas_law PV=nRT;
 equ gas_law_1 (P1)(V1)/(T1)=(P2)(V2)/(T2);
-var gas_law P=1.00e2, V=1.0, n=0.1, R=8.314;
+var gas_law P=1.00E2, V=1.0, n=0.1, R=8.314;
 unc gas_law P=0.01, V=0.1, n=0.01, R=null;
 uni gas_law P='kPa', V='L', n='mol', R='(kPa)(L)/(K)(mol)', T='K';
 
